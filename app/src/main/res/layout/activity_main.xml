@@ -8,13 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include layout="@layout/my_toolbar"
-            android:id="@+id/actionBar"/>
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabsMain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></com.google.android.material.tabs.TabLayout>
+
 
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -23,6 +17,8 @@
         android:id="@+id/vpMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/appBarLayout"></androidx.viewpager.widget.ViewPager>
+        android:layout_below="@+id/appBarLayout">
+
+    </androidx.viewpager.widget.ViewPager>
 
 </RelativeLayout>

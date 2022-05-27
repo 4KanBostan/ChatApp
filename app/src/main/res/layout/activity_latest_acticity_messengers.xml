@@ -6,4 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".LatestActicityMessengers">
 
+    <include
+        android:id="@+id/actionbarLogin"
+        layout="@layout/my_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Login Activity"
+        app:titleTextColor="@color/black"></include>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
