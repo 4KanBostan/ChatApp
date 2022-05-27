@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1034737270255",
+    "project_id": "messenger1-3ccbd",
+    "storage_bucket": "messenger1-3ccbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034737270255:android:90659b3df56f78e7694a1a",
+        "android_client_info": {
+          "package_name": "com.furkanbostan.messenger1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034737270255-jhbiu5riccl52rogq1haacuovgtbonvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWF_9gmjmziwhlrj0Q2KRDLxhbOkZKzlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034737270255-jhbiu5riccl52rogq1haacuovgtbonvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

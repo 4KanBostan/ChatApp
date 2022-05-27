@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/button_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/edittext_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/imageview_photo_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_chat_image.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_photo.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_select_photo_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/actionbar_app.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_latest_acticity_messengers.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_login.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_chat.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_friend.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_request.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/my_toolbar.xml" value="0.24954710144927536" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
