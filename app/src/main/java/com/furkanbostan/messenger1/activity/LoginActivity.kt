@@ -1,4 +1,4 @@
-package com.furkanbostan.messenger1
+package com.furkanbostan.messenger1.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,7 @@ import com.google.firebase.ktx.Firebase
 
 
 class LoginActivity:  AppCompatActivity() {
-    private lateinit var myToolbar : Toolbar
+
     private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
 
@@ -23,9 +23,8 @@ class LoginActivity:  AppCompatActivity() {
         binding= ActivityLoginBinding.inflate(layoutInflater)
         val view= binding.root
         setContentView(view)
-        myToolbar = findViewById(R.id.actionbarLogin)
-        myToolbar.title= "Login Activity"
-        setSupportActionBar(myToolbar)
+
+
 
         binding.loginBackToRegister.setOnClickListener {
             finish()
@@ -37,7 +36,7 @@ class LoginActivity:  AppCompatActivity() {
 
             auth.signInWithEmailAndPassword(binding.loginEmailEditText.text.toString(),binding.loginPasswordLogin.text.toString()).addOnSuccessListener {
 
-                val intent = Intent(this,LatestActicityMessengers::class.java)
+                val intent = Intent(this, UsersActivity::class.java)
                 Log.d("MainActivity","Kullanıcı girişi yapıldı")
                 startActivity(intent)
             }.addOnFailureListener {

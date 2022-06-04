@@ -5,19 +5,33 @@
       <map>
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/button_background.xml" value="0.1955" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/edittext_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/ic_send_24.xml" value="0.204" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/imageview_photo_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/left_side_background_item.xml" value="0.204" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/left_side_item.xml" value="0.204" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/right_side_background_item.xml" value="0.204" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/right_side_item.xml" value="0.204" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_chat_image.xml" value="0.1955" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_photo.xml" value="0.1955" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/rounded_select_photo_background.xml" value="0.1955" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/drawable/send_btn_background.xml" value="0.204" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/actionbar_app.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_latest_acticity_messengers.xml" value="0.24954710144927536" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_login.xml" value="0.24954710144927536" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_new_message_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_user_profil.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/activity_users.xml" value="0.2" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_chat.xml" value="0.24954710144927536" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_friend.xml" value="0.24954710144927536" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/fragment_request.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/item_new_message.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/left_side.xml" value="0.253125" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/my_toolbar.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/layout/right_side.xml" value="0.253125" />
         <entry key="..\:/Users/furkn/AndroidStudioProjects/Messenger1/app/src/main/res/menu/nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

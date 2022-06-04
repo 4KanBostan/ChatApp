@@ -1,30 +1,36 @@
-package com.furkanbostan.messenger1
+package com.furkanbostan.messenger1.activity
 
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
+import android.content.res.Resources
+import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
+import com.furkanbostan.messenger1.R
 
 import com.furkanbostan.messenger1.databinding.ActivityRegisterBinding
+import com.furkanbostan.messenger1.model.User
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
-import java.net.UnknownServiceException
+import java.io.InputStream
+import java.net.URL
 import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
-    private lateinit var myToolbar : Toolbar
+
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
+    private lateinit var url: URL
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,16 +39,15 @@ class RegisterActivity : AppCompatActivity() {
         binding= ActivityRegisterBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        myToolbar = findViewById(R.id.actionbarLogin)
-        myToolbar.title= "Register Activity"
-        setSupportActionBar(myToolbar)
+
+
 
         binding.registerButton.setOnClickListener {
            performRegister()
         }
         binding.registerHaveAnAccountText.setOnClickListener{
             Log.d("MainActivity","Try to Login activity")
-            val intent= Intent(this,LoginActivity::class.java)
+            val intent= Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -108,22 +113,39 @@ class RegisterActivity : AppCompatActivity() {
 
     }
     private fun saveUserToDatabase(profileImageUrl: String){
+
         val uid = FirebaseAuth.getInstance().uid?: ""
         val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
-        val user = User(uid, binding.registerUsernameEditText.toString(),profileImageUrl)
-        ref.setValue(user)
-            .addOnSuccessListener {
-                Log.d("RegisterActiivity","Finally saved the user to Firebase")
-                val intent = Intent(this, LatestActicityMessengers::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
-            }.addOnFailureListener {
-                Log.d("RegisterActivity","saveSUerToDatabase hatalı")
-            }
+        var stance= "Hello, I'm using messenger"
+        if (profileImageUrl==""){
+            val profileImageUrl1="https://firebasestorage.googleapis.com/v0/b/messenger1-3ccbd.appspot.com/o/images%2F1277dc79-b6a0-46d6-ad55-4f7ec08d1673?alt=media&token=fcad00e0-e733-4bf7-bd21-75509e006d4c"
+            val user = User(uid, binding.registerUsernameEditText.text.toString(),profileImageUrl1,stance)
+            ref.setValue(user)
+                .addOnSuccessListener {
+                    Log.d("RegisterActiivity","Finally saved the user to Firebase")
+                    val intent = Intent(this, UsersActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                }.addOnFailureListener {
+                    Log.d("RegisterActivity","saveSUerToDatabase hatalı")
+                }
+        }else{
+            val user = User(uid, binding.registerUsernameEditText.text.toString(),profileImageUrl,stance)
+            ref.setValue(user)
+                .addOnSuccessListener {
+                    Log.d("RegisterActiivity","Finally saved the user to Firebase")
+                    val intent = Intent(this, UsersActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                }.addOnFailureListener {
+                    Log.d("RegisterActivity","saveSUerToDatabase hatalı")
+                }
+        }
+
     }
 
 
-    class User(val uid: String,val username: String, val profileImageUrl:String)
+
 }
 
 

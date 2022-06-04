@@ -1,4 +1,4 @@
-package com.furkanbostan.messenger1
+package com.furkanbostan.messenger1.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
